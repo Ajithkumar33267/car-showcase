@@ -1,5 +1,5 @@
 "use client";
-import { CarsProps } from "@/types";
+import { CarProps } from "@/types";
 import Image from "next/image";
 import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -8,7 +8,7 @@ import { generateCarImageUrl } from "@/utils";
 interface CarDetailsProps {
   isOpen: boolean;
   closeModal: () => void;
-  car: CarsProps;
+  car: CarProps;
 }
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
